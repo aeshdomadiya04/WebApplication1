@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	<Ad>
+		<ImageUrl>img/1.jpg</ImageUrl>
+		<Impression>2</Impression>
+		<!--<NavigateUrl>www.google.com</NavigateUrl>
+		<AlternateText> google1 </AlternateText>
+		<Keywords>.net</Keywords>-->
+	</Ad>
+	<Ad>
+		<ImageUrl>img/2.png</ImageUrl>
+		<Impression>2</Impression>
+	</Ad>
+	<Ad>
+		<ImageUrl>img/1.jpg</ImageUrl>
+		<AlternateText>google</AlternateText>
+	</Ad>
+
+</Advertisements>
