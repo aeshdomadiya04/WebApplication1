@@ -71,17 +71,67 @@
             <br />
             VALIDATION CONTROL<br />
             <br />
+            <asp:Label ID="Label3" runat="server" Text="NAME"></asp:Label>
+&nbsp;:
+            <asp:TextBox ID="NAMETXT" runat="server" Height="16px" style="margin-bottom: 0px"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="NAMETXT" ErrorMessage="NAME IS REQUIRED" ForeColor="#FF3300"></asp:RequiredFieldValidator>
             <br />
+            <br />
+            <br />
+            <asp:Label ID="Label4" runat="server" Text="PASSWORD"></asp:Label>
+&nbsp;:
+            <asp:TextBox ID="PWDTXT" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="PWDTXT" ErrorMessage="PASSWORD*" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+            <br />
+            <br />
+            <br />
+            <asp:Label ID="Label5" runat="server" Text="CONFIRM PASSWORD"></asp:Label>
+&nbsp;:
+            <asp:TextBox ID="CNFMPWDTXT" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="CNFMPWDTXT" ErrorMessage="CONFIRM PASSWORD*" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+            <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="PWDTXT" ControlToValidate="CNFMPWDTXT" ErrorMessage="PASSWORD DOES NOT MATCH" ForeColor="#FF3300"></asp:CompareValidator>
+            <br />
+            <br />
+            <br />
+            <asp:Label ID="Label6" runat="server" Text="AGE"></asp:Label>
+&nbsp;:
+            <asp:TextBox ID="AGETXT" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="AGETXT" ErrorMessage="AGE*" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+            <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="AGETXT" ErrorMessage="AGE MUST BE 18 TO 45" ForeColor="#FF3300" MaximumValue="45" MinimumValue="18"></asp:RangeValidator>
+            <br />
+            <br />
+            <br />
+            <asp:Label ID="Label7" runat="server" Text="EMAIL"></asp:Label>
+&nbsp;:
+            <asp:TextBox ID="EMAILTXT" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="EMAILTXT" ErrorMessage="EMAIL*" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="EMAILTXT" ErrorMessage="EMAIL INVALID" ForeColor="#FF3300" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+            <br />
+            <br />
+            <br />
+            <asp:Label ID="Label8" runat="server" Text="CONTACT NO"></asp:Label>
+&nbsp;:
+            <asp:TextBox ID="CONTACTTXT" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="CONTACTTXT" ErrorMessage="CONTACT NO*" ForeColor="#FF3300"></asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="CONTACTTXT" ErrorMessage="INVALID" ForeColor="#FF3300" ValidationExpression="\d{10}"></asp:RegularExpressionValidator>
+            <br />
+            <br />
+            <br />
+            <asp:Button ID="Button1" runat="server" Text="REGISTER" />
             <br />
             <br />
             <br />
         </div>
+    <p>
+        &nbsp;</p>
+        <p>
+            &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+        <p>
+            &nbsp;</p>
     </form>
-    <p>
-        &nbsp;</p>
-    <p>
-        &nbsp;</p>
-    <p>
-        &nbsp;</p>
-</body>
+    </body>
 </html>

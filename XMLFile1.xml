@@ -3,9 +3,9 @@
 	<Ad>
 		<ImageUrl>img/1.jpg</ImageUrl>
 		<Impression>2</Impression>
-		<!--<NavigateUrl>www.google.com</NavigateUrl>
+		<NavigateUrl>www.google.com</NavigateUrl>
 		<AlternateText> google1 </AlternateText>
-		<Keywords>.net</Keywords>-->
+		<Keywords>.net</Keywords>
 	</Ad>
 	<Ad>
 		<ImageUrl>img/2.png</ImageUrl>
