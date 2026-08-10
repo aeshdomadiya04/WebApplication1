@@ -70,12 +70,26 @@
     <Content Include="img\net.png" />
     <Content Include="img\2.png" />
     <Content Include="img\1.jpg" />
+    <Content Include="multiview.aspx" />
     <Content Include="STANDARD_DEMO.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="XMLFile1.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="multiview.aspx.cs">
+      <DependentUpon>multiview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="multiview.aspx.cs.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="multiview.aspx.cs.designer.cs">
+      <DependentUpon>multiview.aspx.cs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="multiview.aspx.designer.cs">
+      <DependentUpon>multiview.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="STANDARD_DEMO.aspx.cs">
       <DependentUpon>STANDARD_DEMO.aspx</DependentUpon>
