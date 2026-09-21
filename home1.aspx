@@ -29,13 +29,13 @@
 </p>
 <p>
     gender:
-    <asp:RadioButton ID="FEMALE_RadioButton1" runat="server" Text="FEMALE" />
-&nbsp;<asp:RadioButton ID="MALE_RadioButton2" runat="server" Text="MALE" />
+    <asp:RadioButton ID="FEMALE_RadioButton1" runat="server" Text="FEMALE" OnCheckedChanged="FEMALE_RadioButton1_CheckedChanged" />
+&nbsp;<asp:RadioButton ID="MALE_RadioButton2" runat="server" Text="MALE" OnCheckedChanged="MALE_RadioButton2_CheckedChanged" />
 </p>
 <p>
     contact:
     <asp:TextBox ID="CONTACTTXT" runat="server"></asp:TextBox>
-    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="CONTACTTXT" ErrorMessage="INVALID NUMBER" ForeColor="#FF3300" ValidationExpression="\d(10)"></asp:RegularExpressionValidator>
+    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="CONTACTTXT" ErrorMessage="INVALID NUMBER" ForeColor="Red" ValidationExpression="\d{10}"></asp:RegularExpressionValidator>
     <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="CONTACTTXT" ErrorMessage="CONTACT*" ForeColor="#FF3300"></asp:RequiredFieldValidator>
 </p>
 <p>
@@ -48,7 +48,7 @@
     </asp:DropDownList>
 </p>
 <p>
-    <asp:Button ID="REGISTER" runat="server" Text="REGISTER" />
+    <asp:Button ID="REGISTER" runat="server" Text="REGISTER" OnClick="REGISTER_Click" />
 &nbsp;&nbsp;&nbsp;
     <asp:Button ID="CANCEL" runat="server" Text="CANCEL" />
 </p>
